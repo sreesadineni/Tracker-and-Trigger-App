@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="12dp"
+    tools:context=".NewListActivity">
+
+    <EditText
+        android:id="@+id/edit_text_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task" />
+
+    <Button
+        android:id="@+id/save_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save" />
+
+</LinearLayout>

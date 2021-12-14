@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".GeneralNew">
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:id="@+id/newItem"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:id="@+id/newDesc" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity/Status/Information"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:lines="4"
+        android:maxLines="6"
+        android:maxLength="2000"
+        android:id="@+id/newExtra" />
+
+
+
+</LinearLayout>

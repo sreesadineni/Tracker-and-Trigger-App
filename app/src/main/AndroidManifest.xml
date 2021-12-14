@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TrackerNTrigger"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp">
+        <activity android:name=".HomeMaintenanceDisplay" />
+        <activity android:name=".MaintenanceUpdate"
+            android:launchMode="singleTop"
+            android:parentActivityName=".HomeMaintenanceDisplay"
+            ></activity>
+        <activity android:name=".MaintenanceNew"
+            android:launchMode="singleTop"
+            android:parentActivityName=".HomeMaintenanceDisplay"/>
+        <activity android:name=".addMedicalReportActivity" />
+        <activity android:name=".MedicalreportActivity" />
+
+        <receiver
+            android:name=".MeetingBroadcastReceiver"/>
+
+        <receiver android:name=".NewNotify"/>
+
+
+        <activity android:name=".GeneralNew"
+            android:launchMode="singleTop"
+            android:parentActivityName=".GeneralActivity"/>
+        <activity android:name=".GeneralUpdate"
+            android:launchMode="singleTop"
+            android:parentActivityName=".GeneralActivity"/>
+        <activity android:name=".GeneralActivity" />
+        <activity android:name=".UpdateBook"
+            android:launchMode="singleTop"
+            android:parentActivityName=".BookDisplay"/>
+        <activity android:name=".NewBookActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".BookDisplay"/>
+        <activity android:name=".BookDisplay" />
+        <activity android:name=".TrackerActivity" />
+        <activity
+            android:name=".UpdateGrocery"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NewGroceryActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".GroceryDisplay" />
+        <activity android:name=".PhoneAuth" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".NewListActivity" />
+        <activity android:name=".NewMeetActivity" />
+        <activity android:name=".NewNoteActivity" />
+        <activity android:name=".Activity_ToDoList" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Phone">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:foregroundTint="#1DC3D8"
+    android:onClick="logout"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Pic"
+        android:layout_width="175dp"
+        android:layout_height="242dp"
+        android:layout_above="@+id/button_tracker"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="227dp"
+        android:layout_marginBottom="85dp"
+        app:srcCompat="@drawable/male" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="16dp"
+        android:background="#80E409"
+        android:backgroundTint="#00C62121"
+        android:fontFamily="@font/calligraffitti"
+        android:gravity="center_horizontal"
+        android:text="Welcome to Dashboard"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:onClick="logout"
+        android:text="Logout"
+        android:textSize="18sp"
+        app:backgroundTint="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/TextUser"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_tracker"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="208dp"
+        android:layout_toStartOf="@+id/button_trigger"
+        android:drawableLeft="@drawable/ic_tracker"
+        android:text="Tracker" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_trigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="208dp"
+        android:drawableLeft="@drawable/ic_trigger"
+        android:text="Trigger" />
+
+    <RadioGroup
+        android:id="@+id/Radio"
+        android:layout_width="158dp"
+        android:layout_height="94dp">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/FemaleButton"
+        android:layout_width="169dp"
+        android:layout_height="41dp"
+        android:layout_above="@+id/button_tracker"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="26dp"
+        android:text="female"
+        android:textColor="#EA82A5" />
+
+
+</RelativeLayout>

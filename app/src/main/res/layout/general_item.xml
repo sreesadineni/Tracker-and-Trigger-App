@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="@color/purple_200"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/general_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/general_title"
+            android:layout_alignStart="@+id/general_title"
+            android:layout_alignLeft="@+id/general_title"
+            android:layout_alignEnd="@+id/general_title"
+            android:layout_alignRight="@+id/general_title"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:maxLines="1"
+            android:text="Author"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/general_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_toStartOf="@id/image_share"
+            android:layout_toLeftOf="@id/image_share"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Item"
+            android:textSize="28sp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/generalExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/general_desc"
+            android:layout_alignStart="@+id/general_desc"
+            android:layout_alignLeft="@+id/general_desc"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="16dp"
+            android:lines="4"
+            android:text="asdfghdhkdHh egjfwjfjkwebfiewgfuwefiuefhef" />
+
+
+
+        <ImageView
+            android:id="@+id/image_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/general_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_share" />
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
